@@ -1,0 +1,8 @@
+n = int(input("Please enter the limit number (n) for your Prime Number list: "))
+print("Prime numbers to the number n are:", end=' ')
+for n in range(2, n):
+    for i in range(2, n):
+        if n % i == 0:
+            break
+    else:
+        print(n, end=' ')
