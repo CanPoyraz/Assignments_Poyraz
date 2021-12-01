@@ -1,0 +1,11 @@
+arm_num = input('Please enter a positive integer number you want to check: ')
+arm_num2 = 0
+if type(arm_num) != "str"  and arm_num.isdecimal() and not isinstance(arm_num, float) and float(arm_num) > 0:
+  for i in str(arm_num):
+    arm_num2 += int(i) ** int(len(arm_num))
+  if int(arm_num) == arm_num2:
+    print(f'{arm_num} is an armstrong number')
+  else:
+    print(f'{arm_num} is not an armstrong number')
+else:
+  print('It is an invalid entry. Don\'t use non-numeric, float, or negative values!')
