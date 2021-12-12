@@ -1,0 +1,7 @@
+def fib_10(n):
+    fib_55 = [0,1]
+    for i in range(1, 10):
+        next_num = fib_55[-1] + fib_55[-2]
+        fib_55.append(next_num)
+    return sequence
+print(sequence)
