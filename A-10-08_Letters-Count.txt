@@ -1,0 +1,11 @@
+counter_str = input("Please enter your sentence: ")
+def char_frequency(counter_str):
+    dict = {}
+    for n in counter_str:
+        keys = dict.keys()
+        if n in keys:
+            dict[n] += 1
+        else:
+            dict[n] = 1
+    return dict
+print(char_frequency(counter_str))
